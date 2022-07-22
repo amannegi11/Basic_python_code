@@ -121,11 +121,13 @@ for i in l:
             if type(i[e])==str:
                 print(i[e])
 #q13 : Try to Find  out alphanum in data
+
 for i in l:
-    if type(i)==dict:
-        for j in i.keys():
-            if type(j)==str:
-                print(j)
+     if type(i)==dict:
+          for j in i:
+               if type(j)==str:
+                    if j.isalnum():
+                         print(j)
 #q15 : Try to unwrape all the collection inside collection and create a flat list
 m=[]
 for i in l:
